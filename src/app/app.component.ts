@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ng-todo';
+  todoList: string[] = ["Finish assignment", "Walk the dog", "Call mom"];
+
+  addToList(newToDo: string) {
+    this.todoList.push(newToDo);
+  }
+
+
+
 }
